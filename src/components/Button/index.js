@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { ButtonContainer } from './styles'; // Estilos para o botão
 
-import { ButtonContainer } from './styles';
-
-function Button({onClick}) {
+function Button({ onClick, text = "Buscar" }) {
   return (
     <ButtonContainer onClick={onClick}>
-       Buscar
+      {text} {/* Texto do botão, padrão é "Buscar" */}
     </ButtonContainer>
-  )
+  );
 }
 
-export default Button
+export default Button;
